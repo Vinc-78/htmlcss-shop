@@ -1,0 +1,36 @@
+*{margin:0;
+  padding: o;
+  box-sizing: border-box;}
+
+/* Provo a realizzare una prima riga di prodotti e poi copiarla */
+.riga_prodotti{ width: 80%;
+                margin:20px auto;
+                }
+
+.vetrina { width: calc(100% / 3);
+           position: relative;
+           }
+                
+.vetrina img {
+              display: block;
+              width: 100%;
+              height: auto;
+            }
+                
+.overlay {/* Si centra meglio sulla prima foto */
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              height: 100%;
+              width: 100%;
+              display:none;
+          }
+                
+.vetrina:hover .overlay { display:block;}
+                
+.secondaImmagine {
+                 position: absolute;
+                  top: 0%;
+                  left: 0%;}
