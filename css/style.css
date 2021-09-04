@@ -4,9 +4,10 @@
 
 /* Provo a realizzare una prima riga di prodotti e poi copiarla */
 .riga_prodotti{ width: 80%;
-                margin:20px auto;
+                margin:30px auto;
                 }
 
+/* Prodotto è divoso da una parte superiore in cui c'è immagine e i div con gli elementi */
 .prodotto{width: calc(100% / 3.5);
           display: inline-block;}
 
@@ -28,17 +29,23 @@
           }
                 
 .vetrina:hover .overlay { display:block;}
-                
+/* Seconda immagine contenuta in overlay */             
 .secondaImmagine { position: absolute;
                    top: 0%;
                    left: 0%;}
+
+/* Seconda parte di prodotto con info e title */
+/* Classe comune ad .under e .eco  per posizione e colore /stile */
 
 .under  {position: absolute;
         bottom:20px;
         color:white;
         font-size: 1em;
         font-family:  sans-serif;}
- 
+
+
+/* elementi presenti sull'immagine */
+/* Specificata la classe sconto dato margin-right per distanziare dove non presente .eco risulta allineata */
 .under>.sconto{ padding: 4px;
                 margin-right: 5px;
                 background-color: rgb(235, 0, 55);}
@@ -46,12 +53,16 @@
 .under>.eco{ padding: 4px;
              background-color:rgb(0, 135, 90);}
 
-.vetrina .cuore{position: absolute;
-                right: 0px;
-                top:10px;
-                font-size: 35px;
-                padding: 4px 12px;
-                background-color:white;}
+
+.vetrina .cuore{ position: absolute;
+                 right: 0px;
+                 top:10px;
+                 font-size: 35px;
+                 padding: 4px 12px;
+                 background-color:white;}
+
+
+/* Seconda parte di prodotto con marca-spt e prezzo */
 
 .marca{
       font-family: Georgia, 'Times New Roman', Times, serif;
